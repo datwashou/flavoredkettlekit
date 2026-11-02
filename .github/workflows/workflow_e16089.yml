@@ -1,0 +1,12 @@
+name: Integration
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  validate-stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check status
+        run: echo "all set"
